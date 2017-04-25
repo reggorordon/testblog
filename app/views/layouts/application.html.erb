@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ScotchBlog</title>
+  <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'animate', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.testedit', 'data-turbolinks-track' => true %>  
+    <%= javascript_include_tag 'jquery.lettering', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.txtlettering', 'data-turbolinks-track' => true %>
+
+    
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,8 +18,11 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <div class="container-fluid">
+      
+    <h2>This is the blog made with Ruby on Rails and using several gems to make a cool RTE. I have not made it pretty yet!</h2>
     <%= yield %>
   </div>
-
 </body>
+    
+
 </html>
